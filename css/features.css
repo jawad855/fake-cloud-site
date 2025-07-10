@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primo: #047aed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+.hero {
+  background-color: var(--primo);
+}
+
+.hero .container .txt {
+    color: #fff;
+}
+
+.hero .container .txt h1 {
+      font-size: 80px;
+}
+
+.hero .container .txt p {
+      font-size: 25px;
+      max-width: 700px;
+}
+
+
+.hero .container img {
+  width: 200px;
+}
+
+/*platform*/
+
+
+.platform .container .txt h2 {
+      font-size: 50px;
+}
+
+.platform .container .txt p {
+      font-size: 25px;
+      max-width: 500px;
+}
+
+
+.platform .container img {
+  width: 400px;
+}
+
+/*features*/
+
+.features .container {
+  margin-bottom: 50px;
+}
+
+.features .container .card  {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+   padding: 30px;
+    gap: 50px;
+    margin: 0;
+}
+
+.features .container .card  i {
+    font-size: 30px;
+}
+
+.features .grid {
+   grid-template-columns: repeat(3, 1fr);
+   gap:20px;
+    grid-template-rows: auto;
+   grid-template-areas:
+    "c1 c1 c1"
+    "c2 c2 c3"
+    "c4 c5 c6";
+}
+
+.features .grid .c1 {
+  grid-area: c1;
+}
+
+.features .grid .c2 {
+  grid-area: c2;
+}
+
+.features .grid .c3 {
+  grid-area: c3;
+}
+
+.features .grid .c4 {
+  grid-area: c4;
+}
+
+.features .grid .c5 {
+  grid-area: c5;
+}
+
+.features .grid .c6 {
+  grid-area: c6;
+}
+

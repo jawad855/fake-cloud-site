@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primo: #047aed;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+
+
+/*Hero section*/
+
+.hero {
+  height: 400px;
+  background: var(--primo);
+  color: #fff;
+  position: relative;
+  justify-content: space-around;
+}
+
+.haro h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.hero .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+}
+
+.hero-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 152;
+}
+
+.hero-form .form-control {
+  margin: 30px 0;
+}
+
+.hero-form .form-control input[type="text"],
+.hero-form .form-control input[type="email"] {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #b4becb;
+  width: 100%;
+  padding: 0px 0 2px 5px;
+  font-size: 16px;
+}
+
+.hero-form .form-control input:focus {
+  border-bottom: solid 1px #333;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/*stats*/
+.stats {
+  padding-top: 100px;
+}
+
+.stats .stats-header {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .text-secondary {
+  color: var(--primo);
+}
+
+/*Cli*/
+
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "img img card1"
+    "img img card2";
+}
+
+.cli img {
+  grid-area: img;
+}
+
+.cli .card:first-child {
+  grid-area: card1;
+}
+.cli .card:last-child {
+  grid-area: card2;
+}
+
+/*Cloud*/
+
+.cloud {
+  background-color: #047aed;
+  color: #fff;
+}
+
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+.cloud .container {
+  padding: 20px;
+}
+
+.cloud .container .text-center h2 {
+  font-size: 3rem;
+}
+
+.cloud .container .text-center p {
+  padding-bottom: 20px;
+}
+
+
+
+.cloud .container .text-center .btn a {
+  color: #fff;
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.cloud .container img {
+  width: 400px;
+}
+
+/*Supported langs*/
+
+.langs .grid {
+  grid-template-columns: repeat(7,150px);
+  gap:20px
+}
+
+.langs h1 {
+  font-size: 50px;
+  padding: 50px;
+}
+
+.langs .cards {
+  padding: 0 0 50px 0;
+}
+
+.langs .cards .card{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3 ease;
+}
+
+.langs .cards .card img{
+  padding-top: 8px;
+  width: 50px;
+}
+
+.langs .cards .card:hover {
+  transform: translateY(-15px);
+}
+

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primo: #047aed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+/*hero*/
+.hero {
+  background-color: var(--primo);
+}
+
+.hero .container .txt {
+    color: #fff;
+}
+
+.hero .container .txt h1 {
+      font-size: 80px;
+}
+
+.hero .container .txt p {
+      font-size: 25px;
+      max-width: 700px;
+}
+
+
+.hero .container img {
+  width: 200px;
+}
+
+/*docs*/
+
+.doc .container {
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 70%;
+  display: grid;
+  gap: 5px;
+  padding: 50px 150px;
+  align-items: start;
+  justify-content: start;
+  height: 100%;
+
+}
+
+.doc .container .card {
+  padding: 30px ;
+}
+
+.doc .container .list {
+  background: #eaeeed;
+}
+
+.doc .container .list p {
+  margin: 0 10px;
+  padding: 10px 0;
+  border-bottom: solid 1px #cccccc ;
+}
+
+.doc .container .list .active{
+  color: var(--primo);
+ 
+}
+
+.doc .container .list p:hover {
+
+    font-weight: bold;
+}
+
+.doc .container .content p {
+  
+  padding: 10px 0;
+}
+
+.doc .container .content .green {
+  
+  background-color: green;
+  color:#fff;
+  padding: 10px 0 10px 10px;
+}
+
+.doc .container .content h1 {
+   font-weight: bold;
+   padding-top: 30px;
+}
+
+.doc .container .card .btn a {
+    color: #fff;
+}
+
+.doc .container .content .black {
+  
+  background-color: #000;
+  color:#fff;
+  padding: 10px 0 10px 10px;
+}
